@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Vue Sample</title>
+    <title>life cycle one</title>
     <style>
         #app {
             height: 100px;
@@ -31,7 +31,6 @@
                 console.log("created");
             },
             mounted: function () {
-                this.message = 'Hello Vue!';
                 console.log("mounted");
             },
             updated: function () {
@@ -41,11 +40,13 @@
         });
     </script>
     <!--
-        console에서 beforeCreate, created, mounted, updated 모두 출력된다.
+        console에서 beforeCreate, created, mounted는 출력되지만,
+        updated는 출력되지 않는다.
         
-        => message의 값이 갱신되었기 때문.
+        => 데이터의 변경이 일어나지 않았기 때문.
 
     -->
+    
 </body>
 
 </html>
