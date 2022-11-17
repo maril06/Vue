@@ -31,6 +31,7 @@
                 console.log("created");
             },
             mounted: function () {
+                this.message = 'Hello Vue!';
                 console.log("mounted");
             },
             updated: function () {
@@ -40,10 +41,9 @@
         });
     </script>
     <!--
-        console에서 beforeCreate, created, mounted는 출력되지만,
-        updated는 출력되지 않는다.
+        console에서 beforeCreate, created, mounted, updated 모두 출력된다.
         
-        => 데이터의 변경이 일어나지 않았기 때문.
+        => message의 값이 갱신되었기 때문.
 
     -->
 </body>
