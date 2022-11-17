@@ -1,0 +1,5 @@
+Copyright 2022. 이지스퍼블리싱 All rights reserved.
+
+[do it! Vue.js 입문]
+
+Modifications and changes for study
