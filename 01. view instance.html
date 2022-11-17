@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title>Vue Sample</title>
+    <style>
+        #app{
+            height: 100px;
+            text-align: center;
+        }
+        table{
+            width: 400px;
+            text-align: center;
+            margin:auto;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="wrap">
+        <div id="app">
+            {{ message }}
+        </div>
+        <table border="1">
+            <caption>view instance</caption>
+            <tr>
+                <td>new Vue({})</td>
+                <td>인스턴스</td>
+            </tr>
+            <tr>
+                <td>Vue</td>
+                <td>생성자</td>
+            </tr>
+            <tr>
+                <td>el속성</td>
+                <td>뷰 인스턴스가 그려질 지점을 지정</td>
+            </tr>
+            <tr>
+                <td>data속성</td>
+                <td>인스턴스에 정의한 객체의 내용</td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.2/dist/vue.js"></script>
+    <!-- new Vue(생성자) 보다 아래에 위치시키면 접근이 불가능함!! -->
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                message: 'Hello Vue.js!'
+            }
+        });
+    </script>
+</body>
+
+</html>
