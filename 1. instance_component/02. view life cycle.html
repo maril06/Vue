@@ -19,6 +19,11 @@
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.2/dist/vue.js"></script>
 
     <script>
+        /*
+            라이프 사이클 속성 : 인스턴스의 상태에 따라 호출할 수 있는 속성
+
+                                인스턴스의 생성, 변경, 갱신, 소멸과 관련되어 총 8개가 있음
+        */
         new Vue({
             el: '#app',
             data: {
@@ -30,13 +35,21 @@
             created: function () {
                 console.log("created");
             },
+            beforeMount : function(){
+                console.log("beforeMount");
+            },
             mounted: function () {
                 console.log("mounted");
             },
+            
+            beforeUpdate : function(){
+                console.log("beforeUpdate");
+            },
+            
             updated: function () {
                 console.log("updated");
             }
-
+            
         });
     </script>
     <!--
